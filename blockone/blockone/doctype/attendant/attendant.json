@@ -1,0 +1,228 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-05-16 19:18:19.692241",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "enabled",
+  "section_break_3",
+  "attendant_name",
+  "attendant_mobile_number",
+  "attendant_email_id",
+  "column_break_4",
+  "applicant_date",
+  "naming_series",
+  "section_break_7",
+  "age",
+  "specialist",
+  "column_break_3",
+  "gender",
+  "nationality",
+  "seminar_ernollment",
+  "section_break_22",
+  "address_line",
+  "column_break_20",
+  "city",
+  "state",
+  "exit",
+  "date_of_leaving",
+  "leaving_certificate_number",
+  "column_break_31",
+  "reason_for_leaving",
+  "title"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attendant_name",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "label": "Attendant Name",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "no_copy": 1,
+   "options": "NANO-SEM-.YYYY.-",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "attendant_email_id",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Attendant Email Address",
+   "unique": 1
+  },
+  {
+   "fieldname": "attendant_mobile_number",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Attendant Mobile Number"
+  },
+  {
+   "default": "Today",
+   "fieldname": "applicant_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Applicant Date"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "specialist",
+   "fieldtype": "Data",
+   "label": "Specialist"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "default": "Yemeni",
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "seminar_ernollment",
+   "fieldtype": "Link",
+   "label": "Seminar Enrollment",
+   "options": "Seminar Enrollment",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break",
+   "label": "Home Address"
+  },
+  {
+   "fieldname": "address_line",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Sana'a",
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "default": "Sana'a",
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "exit",
+   "fieldtype": "Section Break",
+   "label": "Exit"
+  },
+  {
+   "fieldname": "date_of_leaving",
+   "fieldtype": "Date",
+   "label": "Date of Leaving"
+  },
+  {
+   "fieldname": "leaving_certificate_number",
+   "fieldtype": "Data",
+   "label": "Leaving Certificate Number"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reason_for_leaving",
+   "fieldtype": "Text",
+   "label": "Reason For Leaving"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  }
+ ],
+ "links": [],
+ "modified": "2022-05-18 14:21:08.501560",
+ "modified_by": "Administrator",
+ "module": "blockone",
+ "name": "Attendant",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "read": 1,
+   "role": "Instructor"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Academics User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
+   "share": 1
+  }
+ ],
+ "restrict_to_domain": "Education",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title"
+}

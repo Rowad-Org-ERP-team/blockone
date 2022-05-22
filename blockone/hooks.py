@@ -1,7 +1,7 @@
 from . import __version__ as app_version
 
 app_name = "blockone"
-app_title = "Blockone"
+app_title = "BlockOne"
 app_publisher = "Rowad ERP Team"
 app_description = "BlockOne Added Value"
 app_icon = "octicon octicon-file-directory"

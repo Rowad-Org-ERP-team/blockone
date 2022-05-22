@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "creation": "2022-05-22 20:12:22.736786",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "task",
+  "subject",
+  "parent_task",
+  "is_group"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "task",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Task",
+   "options": "Task",
+   "reqd": 1
+  },
+  {
+   "columns": 6,
+   "fetch_from": "task.subject",
+   "fieldname": "subject",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Subject"
+  },
+  {
+   "fieldname": "parent_task",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Parent Task",
+   "options": "Task"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "in_preview": 1,
+   "label": "Is Group"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2022-05-22 21:52:32.465695",
+ "modified_by": "Administrator",
+ "module": "BlockOne",
+ "name": "Check List",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

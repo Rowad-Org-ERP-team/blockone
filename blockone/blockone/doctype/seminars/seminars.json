@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_auto_repeat": 1,
+ "allow_rename": 1,
+ "autoname": "field:seminar_title",
+ "creation": "2022-05-14 15:29:23.071185",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "seminar_title",
+  "seminar_information_section",
+  "department",
+  "room",
+  "project_template",
+  "project",
+  "s_date",
+  "e_date",
+  "tasks",
+  "content_info_section",
+  "description_content"
+ ],
+ "fields": [
+  {
+   "fieldname": "seminar_information_section",
+   "fieldtype": "Section Break",
+   "label": "Seminar Info"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description_content",
+   "fieldtype": "Text Editor",
+   "label": "Description Content"
+  },
+  {
+   "fieldname": "content_info_section",
+   "fieldtype": "Section Break",
+   "label": "Content Info"
+  },
+  {
+   "fieldname": "room",
+   "fieldtype": "Link",
+   "label": "Hole",
+   "options": "Room"
+  },
+  {
+   "fetch_from": "project.project_template",
+   "fieldname": "project_template",
+   "fieldtype": "Link",
+   "label": "Project Template",
+   "options": "Project Template",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tasks",
+   "fieldtype": "Table",
+   "label": "Check List",
+   "options": "Check List"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "fieldname": "seminar_title",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Seminar Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "read_only": 1
+  },
+  {
+   "fieldname": "s_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "e_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-05-22 21:43:41.768745",
+ "modified_by": "Administrator",
+ "module": "BlockOne",
+ "name": "Seminars",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Academics User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:attendant_name",
+ "creation": "2022-05-16 09:06:31.215290",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "attendant_customer",
+  "attendant_name",
+  "attendant_group",
+  "column_break_4",
+  "seminar",
+  "enrollment_date",
+  "section_break_7",
+  "fees",
+  "amended_from",
+  "image"
+ ],
+ "fields": [
+  {
+   "fetch_from": "attendant.title",
+   "fieldname": "attendant_name",
+   "fieldtype": "Read Only",
+   "in_global_search": 1,
+   "label": "Attendant Name",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "attendant_group",
+   "fieldtype": "Link",
+   "label": "Attendant Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "seminar",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Seminar",
+   "options": "Seminars",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "enrollment_date",
+   "fieldtype": "Date",
+   "label": "Enrollment Date",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Fees"
+  },
+  {
+   "fieldname": "fees",
+   "fieldtype": "Table",
+   "label": "Seminar Fees",
+   "options": "Fee"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Seminar Enrollment",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Seminar Enrollment",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "attendant_customer",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "label": "Attendant ( Customer )",
+   "options": "Attendant",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "image_field": "image",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-05-19 11:19:06.043962",
+ "modified_by": "Administrator",
+ "module": "blockone",
+ "name": "Seminar Enrollment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Academics User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "LMS User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "restrict_to_domain": "Education",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "attendant_name"
+}

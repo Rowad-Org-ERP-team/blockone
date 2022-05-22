@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "SUB-BACK-.###.",
+ "creation": "2022-04-28 01:31:51.532914",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "space_type",
+  "space_size",
+  "subscription_type",
+  "details_section",
+  "maximum_number_of_tables",
+  "maximum_number_of_chairs",
+  "column_break_8",
+  "internet_bandwidth",
+  "default_price"
+ ],
+ "fields": [
+  {
+   "default": "Monthly",
+   "depends_on": "eval:doc.space_type == \"Shared space\"",
+   "fieldname": "subscription_type",
+   "fieldtype": "Link",
+   "label": "Subscription Type",
+   "mandatory_depends_on": "eval:doc.space_type == \"Shared space\"",
+   "options": "Subscription Category",
+   "read_only_depends_on": "eval:doc.space_type == \"Private Room\"",
+   "reqd": 1
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "internet_bandwidth",
+   "fieldtype": "Int",
+   "label": "Internet Bandwidth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "maximum_number_of_chairs",
+   "fieldtype": "Int",
+   "label": "Maximum Number of Chairs",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "maximum_number_of_tables",
+   "fieldtype": "Int",
+   "label": "Maximum Number of Tables",
+   "reqd": 1
+  },
+  {
+   "fieldname": "default_price",
+   "fieldtype": "Currency",
+   "label": "Default Price ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "space_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Space Type",
+   "options": "Workspace Type",
+   "reqd": 1
+  },
+  {
+   "default": "Fixed",
+   "depends_on": "eval:doc.space_type == \"Private Room\"",
+   "fieldname": "space_size",
+   "fieldtype": "Link",
+   "label": "Space Size",
+   "mandatory_depends_on": "eval:doc.space_type == \"Private Room\"",
+   "options": "Workspace Size",
+   "read_only_depends_on": "eval:doc.space_type == \"Shared space\"",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Subscription Item",
+   "link_fieldname": "subscription_package"
+  },
+  {
+   "link_doctype": "Item",
+   "link_fieldname": "subscription_package"
+  }
+ ],
+ "modified": "2022-05-04 05:12:14.234878",
+ "modified_by": "Administrator",
+ "module": "BlockOne",
+ "name": "Subscription Package",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

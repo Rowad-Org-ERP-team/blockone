@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_auto_repeat": 1,
+ "allow_rename": 1,
+ "autoname": "field:coach_name",
+ "creation": "2022-05-14 16:50:30.097493",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "coach_name",
+  "coach_specialist",
+  "column_break_3",
+  "coach_contact",
+  "mobile_no",
+  "gender",
+  "skills_info_section",
+  "description",
+  "department"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "coach_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Coach Name",
+   "options": "Supplier",
+   "unique": 1
+  },
+  {
+   "fieldname": "coach_specialist",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Coach Specialist "
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "coach_contact",
+   "fieldtype": "Link",
+   "label": "Coach Contact",
+   "options": "Contact"
+  },
+  {
+   "fetch_from": "coach_contact.mobile_no",
+   "fieldname": "mobile_no",
+   "fieldtype": "Read Only",
+   "label": "Mobile No."
+  },
+  {
+   "fieldname": "skills_info_section",
+   "fieldtype": "Section Break",
+   "label": "Skills Info"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description "
+  },
+  {
+   "default": "BlockOne - R",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-05-18 06:49:46.251135",
+ "modified_by": "Administrator",
+ "module": "blockone",
+ "name": "Coaches",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

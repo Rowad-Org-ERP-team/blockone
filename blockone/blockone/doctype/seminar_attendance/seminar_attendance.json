@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:attendant",
+ "creation": "2022-05-16 10:19:20.751765",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "attendant",
+  "attendant_mobile_number",
+  "student_group",
+  "column_break_3",
+  "date",
+  "status",
+  "amended_from",
+  "attendence_primary_address"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "SEM-ATT-.YYYY.-"
+  },
+  {
+   "fieldname": "attendant",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Attendant ",
+   "options": "Seminar Enrollment",
+   "reqd": 1,
+   "search_index": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "attendance_primary_contact.mobile_no",
+   "fieldname": "attendant_mobile_number",
+   "fieldtype": "Read Only",
+   "label": "Attendant Mobile Number",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "student_group",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Attendant Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "default": "Present",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Present\nAbsent",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Seminar Attendance",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Seminar Attendance",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "attendence_primary_address",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Attendence Primary Contact",
+   "options": "Contact"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-05-20 13:58:29.283850",
+ "modified_by": "Administrator",
+ "module": "blockone",
+ "name": "Seminar Attendance",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Academics User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "restrict_to_domain": "Education",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "attendant"
+}

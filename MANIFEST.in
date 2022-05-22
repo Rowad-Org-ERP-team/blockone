@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include blockone *.css
+recursive-include blockone *.csv
+recursive-include blockone *.html
+recursive-include blockone *.ico
+recursive-include blockone *.js
+recursive-include blockone *.json
+recursive-include blockone *.md
+recursive-include blockone *.png
+recursive-include blockone *.py
+recursive-include blockone *.svg
+recursive-include blockone *.txt
+recursive-exclude blockone *.pyc

@@ -1,0 +1,159 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-22 18:03:33.689249",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "brief_description_section",
+  "project",
+  "column_break_3",
+  "seminar",
+  "date",
+  "coach",
+  "seminar_fee",
+  "revenue",
+  "survey_summery_section",
+  "number_of_participants",
+  "satisfaction_summary",
+  "how_we_did_it_step_by_step_section",
+  "task_done_section",
+  "check_list__tasks_",
+  "what_we_required_section",
+  "materials_and_equipment",
+  "section_break_17",
+  "problems_and_challenges",
+  "links_and_photos"
+ ],
+ "fields": [
+  {
+   "fieldname": "brief_description_section",
+   "fieldtype": "Section Break",
+   "label": "Brief description"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project ",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "seminar",
+   "fieldtype": "Link",
+   "label": "Seminar",
+   "options": "Seminars"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "coach",
+   "fieldtype": "Link",
+   "label": "Coach",
+   "options": "Coaches"
+  },
+  {
+   "fieldname": "seminar_fee",
+   "fieldtype": "Data",
+   "label": "Seminar Fee"
+  },
+  {
+   "fieldname": "revenue",
+   "fieldtype": "Data",
+   "label": "Revenue"
+  },
+  {
+   "fieldname": "survey_summery_section",
+   "fieldtype": "Section Break",
+   "label": "Survey Summery"
+  },
+  {
+   "fieldname": "number_of_participants",
+   "fieldtype": "Table",
+   "label": "Number of participants",
+   "options": "Number of Participant"
+  },
+  {
+   "fieldname": "satisfaction_summary",
+   "fieldtype": "Table",
+   "label": "Satisfaction Summary",
+   "options": "Satisfaction Summary"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "how_we_did_it_step_by_step_section",
+   "fieldtype": "Section Break",
+   "label": "How We Did It Step by Step"
+  },
+  {
+   "default": "1.\tFinding the coach\n2.\tIdentify the Suitable date and time\t\n3.\tPublishing Facebook Add\n4.\tRegistration\n5.\tRegistration closing\t \n6.\tArrange the space\t\t\n7.\tPreparing Attendees List\t\n8.\tAttendees Registration\t ",
+   "fieldname": "check_list__tasks_",
+   "fieldtype": "Text",
+   "label": "Check List ( Tasks )"
+  },
+  {
+   "fieldname": "what_we_required_section",
+   "fieldtype": "Section Break",
+   "label": "What We Required"
+  },
+  {
+   "default": "1.\tChairs and Tables \n2.\tData show      \n3.\tPencil and paper",
+   "fieldname": "materials_and_equipment",
+   "fieldtype": "Long Text",
+   "label": "Materials and equipment "
+  },
+  {
+   "default": "1.\tFacebook Page  \nhttps://www.facebook.com/Blockone.org\n2.\tEvent Link\n3.https://www.facebook.com/Blockone.org/photos/a.1402358153367866/2826466950956972/\n4.\tPhotos Album\n5.\thttps://www.facebook.com/media/set/?vanity=Blockone.org&set=a.2830385370565130\n",
+   "fieldname": "links_and_photos",
+   "fieldtype": "Text Editor",
+   "label": "Links And photos"
+  },
+  {
+   "default": "1.  None ",
+   "fieldname": "problems_and_challenges",
+   "fieldtype": "Long Text",
+   "label": "Problems And Challenges"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "task_done_section",
+   "fieldtype": "Section Break",
+   "label": "Task Done"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-05-22 18:14:54.535674",
+ "modified_by": "Administrator",
+ "module": "blockone",
+ "name": "Event Activity Summary",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
